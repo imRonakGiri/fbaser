@@ -30,16 +30,100 @@
       .title {
         font-size: 5rem;
       }
+      main {
+        width: 100vw;
+        height: 50vh;
+      }
+      .social-menu ul {
+        top: 50%;
+        left: 50%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+      .social-menu ul li {
+        margin: 0 15px;
+        list-style: none;
+        color: rgb(255, 255, 255);
+      }
+      .social-menu ul li .fab {
+        color: #000;
+        transition: 0.3s;
+        font-size: 30px;
+        line-height: 60px;
+      }
+      .social-menu ul li .fab:hover {
+        color: #fff;
+      }
+      .social-menu ul li a {
+        width: 60px;
+        height: 60px;
+        display: block;
+        transition: 0.6s;
+        text-align: center;
+        position: relative;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+      }
+      .social-menu ul li a:hover {
+        transform: translate(0, -10%);
+      }
+      .social-menu ul li:nth-child(1) a:hover {
+        background-color: rgba(0, 0, 0, 0.829);
+      }
+      .social-menu ul li:nth-child(2) a:hover {
+        background-color: #e4405f;
+      }
+      .social-menu ul li:nth-child(3) a:hover {
+        background-color: #0077b5;
+      }
+      .social-menu ul li:nth-child(4) a:hover {
+        background-color: #000;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1 class="title">RonakGiri A Goswami</h1>
       <p>HTML-CSS-JAVASCRIPT-PHP-GIT-GITHUB-FIREBASE-NODE.JS</p>
-      <h5>Full stack Devloper</h5>
+      <p>Full stack Devloper</p>
     </header>
     <main>
-      <div class="my-sm"></div>
+      <div class="social-menu">
+        <ul>
+          <li>
+            <a
+              aria-label="github"
+              href="https://github.com/imronakgiri"
+              target="blank"
+              ><i class="fab fa-github"></i></a
+            >Github
+          </li>
+          <li>
+            <a
+              aria-label="codepen"
+              href="https://codepen.io/imronakgiri"
+              target="blank"
+              ><i class="fab fa-codepen"></i></a
+            >Codepen
+          </li>
+          <li>
+            <a
+              aria-label="linkedin"
+              href="https://www.linkedin.com/in/imronakgiri"
+              target="blank"
+              ><i class="fab fa-linkedin-in"></i></a
+            >linkedin
+          </li>
+        </ul>
+      </div>
     </main>
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
